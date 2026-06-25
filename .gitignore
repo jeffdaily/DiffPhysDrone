@@ -1,0 +1,9 @@
+# Python / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+
+# torch CUDAExtension build outputs (hipify mirrors and compiled module)
+*.hip
+*.so

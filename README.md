@@ -43,6 +43,8 @@ To build the CUDA operations, run the following command:
 pip install -e src
 ```
 
+The same command also builds the operations on AMD GPUs: with a [ROCm](https://rocm.docs.amd.com/) build of PyTorch it works unchanged, since PyTorch translates the CUDA sources to HIP at build time. Optionally set `PYTORCH_ROCM_ARCH` (for example `gfx90a` or `gfx1100`) to build only for your GPU. Tested with ROCm 7.2 and PyTorch 2.13 on gfx90a (MI250X) and gfx1100 (Radeon Pro W7800).
+
 ## Training
 
 To start the training process, use the following command:
